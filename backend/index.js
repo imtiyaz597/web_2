@@ -392,6 +392,9 @@ app.use(cors({
   credentials: true,
 }));
 
+app.use(cors()); // opens to everyone
+
+
 // Connect to MongoDB using environment variable
 mongoose
   .connect(process.env.MONGO_URI, {
